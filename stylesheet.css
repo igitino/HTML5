@@ -2,15 +2,15 @@
 
 
 body {
-  background: rgba(255, 255, 230, 1);
+ /* background: rgba(255, 255, 230, 1);*/
   font-family: "Roboto";
 }
 
 #main-header{
-  background: rgba(255, 100, 100, 1);
+  background-color: rgba(255, 100, 100, 1);
   margin: none;
   text-align: justify;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid red;
   margin-left: 25px;
 
 }
@@ -33,7 +33,7 @@ article {
   margin-right: 25px;
   text-align: justify;
   column-count: 3;
-  column-gap: 20px
+  column-gap: 2
 }
 
 article:first-of-type:first-letter {
@@ -42,15 +42,29 @@ article:first-of-type:first-letter {
  font-family: "Verdana";
 }
 
-.container {
+.contaimer{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
   border: 10px;
-  max-width: 30%;
-  max-height: 30%;
+  
 }
 
 .photo {
-width: 200px;
-height: 180px;
+width: 48%;
+display: inline-block;
 margin: 10px;
-padding: 20px;
+padding: 2px;
+border: 2px solid salmon;
+flex-wrap: wrap; 
+}
+
+#popup {
+  display:none;
+  position:absolute;
+  margin:0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 50px 2px #000;
 }

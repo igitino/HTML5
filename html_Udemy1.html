@@ -4,7 +4,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <head>
+<link rel="stylesheet" href="stylesheet.css">
+
+<head>
   </head>
     <body>
       <title> Udemy Html5</title>
@@ -42,6 +44,16 @@ Number one in doing shit
           <br />
     </section>
 </div>
+<h2 style="margin-left: 2rem;">Elemento  semantico  PROGRESS </h2>
+<progress id="percent-loaded" value="75" max="100" style="margin-left: 2rem;">75 %</progress>
+<h5 style="margin-left: 2rem"> Alto Progress</h5>
+</hr>
+<progress id="percent-loaded" value="25" max="100" style="margin-left: 2rem;">75 %</progress>
+<h5 style="margin-left: 2rem">Comprensión</h5>
+</hr>
+<progress id="percent-loaded" value="100" max="100" style="margin-left: 2rem;">75 %</progress>
+<h5 style="margin-left: 2rem"> Boludez</h5>
+</hr>
 <div class="container">
     <section>
       <input name = "address1" placeholder="Dirección"   />
@@ -149,9 +161,32 @@ Number one in doing shit
 </br>
 <p><button type="submit" class="btn btn-primary btn-lg">Tu Orden</button>
 </div>
+
+<form>
+  <label for="numberOne">Inserte Kg: </label>
+  <input class="Kg" type ="number" id="numberOne" placeholder ="Kg">  
+</br>
+</br>
+<button onClick="converter()" class="btn btn-primary btn-lg">Convertir</button>
+</form>
+<span><p id="resultado"></p></span>
+
+
+
+<div id="popup" class="popup panel panel-primary">
+
+  <!-- and here comes the image -->
+  <img src="../grid_intento_15-5-22/photo/CABJ70.png"style="height: 400px; " alt="popup">
+  <div class="panel-footer">
+    <button id="close" class="btn btn-sm btn-primary">Cierre</button>
+</div>
+</div>
+
+
+
 </main>
     </body>
 
-
+<script src="script.js"></script>
 
 </html>
